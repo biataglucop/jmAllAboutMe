@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Myself</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(92, 52, 58);
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+       
+        header {
+            background-color: #064646; 
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        /* Buttons styling for hover and active effects */
+        .button1:hover {
+            opacity: 0.7;
+        }
+
+        .button1:active {
+            opacity: 0.4;
+        }
+
+        /* Main section styles */
+        main {
+            background-color: #ffe4e1; /* Light pink background for main content */
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Styling the images inside the sections */
+        figure {
+            margin-bottom: 20px;
+        }
+
+        figure img {
+            border: 10px solid pink;
+            margin-bottom: 10px;
+            width: 250px;
+            height: auto;
+        }
+
+        figcaption {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: black;
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #ffb6c1;
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        footer p {
+            color: black;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #008080;
+        }
+
+        /* Flexbox Layout */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .image-gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Grid Layout for My Hobbies section */
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .hobbies-grid img {
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>All About Myself</h1>
+        <nav>
+            <ul>
+                <a href="index.html" class="button1"><img src="home_001.png" alt="Home" style="width: 150px;"></a></li>
+                <a href="#Myself" class="button1"><img src="myself_001.png" alt="Myself" style="width: 150px;"></a></li>
+                <a href="#LifeStory" class="button1"><img src="story_001.png" alt="LifeStory" style="width: 150px;"></a></li>
+                <a href="#Hobbies" class="button1"><img src="hobbies_001.png" alt="Hobbies" style="width: 150px;"></a></li>
+                <a href="#Favorites" class="button1"><img src="fav_001.png" alt="Favorites" style="width: 150px;"></a></li>
+                <a href="#Friends" class="button1"><img src="friends_001.png" alt="Friends" style="width: 150px;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home">
+            <h2>My Home</h2>
+            <figure>
+                <img src="B1.jfif." alt="Home Image">
+                <figcaption>This is how I look like in real life</figcaption>
+                <p>I'm so blessed because my relatives adopted me and my brother to continue our studies. My father couldn’t afford it, so we decided to live in another house to pursue our future.</p>
+            </figure>
+        </section>
+
+        <section id="Myself">
+            <h2>About Myself</h2>
+            <figure class="image-gallery">
+                <img src="B1.jfif" alt="Owner of the Company">
+                <img src="A1.jfif" alt="Owner of the Company">
+                <img src="A2.jfif" alt="Owner of the Company">
+                <img src="A3.jfif" alt="Owner of the Company">
+                <img src="A4.jfif" alt="Owner of the Company">
+                <figcaption>Hello, it's me, JHONMARK for short (JM)
+                <p>Hello, my name is Jhon mark Sarabia, and I am 19 years old. I live in Nasipit Agusan Del Norte.</p>
+            </figure>
+        </section>
+
+        <section id="LifeStory">
+            <h2>This is my life story</h2>
+            <figure class="image-gallery">
+                <img src="L1.jfif" alt="Life Story 1">
+                <figcaption> (These are important moments in my life).
+                <p>Growing up, I was considered a shy person. However, those two years became the best of my life. Now, I am in college, working hard to complete my degree and pursue my future goals.</p>
+            </figure>
+        </section>
+
+        <section id="Hobbies">
+            <h2>My Hobbies
+            <div class="hobbies-grid">
+                <img src="H1.jfif" alt="Drive"><br>
+                <img src="h2.jfif" alt="Sleeping">
+            </div>
+            <p>As a shy person, I enjoy these hobbies that help me express myself and find joy in life. They allow me to relax and grow personally.</p>
+        </section>
+
+        <section id="Favorites">
+            <h2>The Things That I Like
+            <figure class="image-gallery">
+                <img src="s1.jfif" alt="Eating">
+                <figcaption>Eating
+                <p>I love eating because it gives me the chance to immerse myself in a world of flavors and creativity.</p>
+            </figure>
+            <figure class="image-gallery">
+                <img src="H1.jfif" alt="driving">
+                <figcaption>Driving
+                <p>i love driving it gives me happy when driving the road is physical activity that enhances or maintains fitness and overall health.</p>
+            </figure>
+        </section>
+
+        <section id="Friends">
+            <h2>Friends?<br>
+            <figcaption>ChildHood Friends<p>
+                <img src="f1.jfif" alt="Friend 1">
+                <figcaption>My friends, but not all are true friends.
+                <p>In college, I've met many people, but I've realized not all of them are true friends. I prefer to keep my distance from fake companionships.</p>
+            </figure>
+
+            <section id="Friends">
+                    <h2>College Friends
+                    <figure class="image-gallery">
+                        <img src="f2.jfif" alt="Friend 1">
+                        <img src="f3.jfif" alt="Friend 2">
+    </main>
+
+    <footer>
+        <p>All Rights Reserved &copy; Sarabia</p>
+        <a href="#top" class="button1"><img src="back_to_top_001.png" alt="Back to top"></a>
+    </footer>
+
+</body>
+</html>
